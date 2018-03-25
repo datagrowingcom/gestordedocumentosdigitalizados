@@ -1,12 +1,4 @@
-TESTANDO AMBIENTE GIT
-
 <?php
-
-// Show all information, defaults to INFO_ALL
-phpinfo();
-?>
-/*<?php
-
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -24,7 +16,7 @@ phpinfo();
  *
  * NOTE: If you change these, also change the error_reporting() code below
  *
- *
+ */
 	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
@@ -34,7 +26,7 @@ phpinfo();
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  *
-
+*/
 if (defined('ENVIRONMENT'))
 {
 	switch (ENVIRONMENT)
@@ -63,7 +55,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  *
-	$system_path = 'system';
+*/	$system_path = 'system';
 
 /*
  *---------------------------------------------------------------
@@ -78,7 +70,7 @@ if (defined('ENVIRONMENT'))
  *
  * NO TRAILING SLASH!
  *
- *
+ */
 	$application_folder = 'application';
 
 /*
@@ -127,7 +119,7 @@ if (defined('ENVIRONMENT'))
  * Un-comment the $assign_to_config array below to use this feature
  *
  */
-	// $assign_to_config['name_of_config_item'] = 'value of config item';
+	 $assign_to_config['name_of_config_item'] = 'value of config item';
 
 
 
@@ -139,7 +131,7 @@ if (defined('ENVIRONMENT'))
  * ---------------------------------------------------------------
  *  Resolve the system path for increased reliability
  * ---------------------------------------------------------------
- *
+ */
 
 	// Set the current directory correctly for CLI requests
 	if (defined('STDIN'))
@@ -165,7 +157,7 @@ if (defined('ENVIRONMENT'))
  * -------------------------------------------------------------------
  *  Now that we know the path, set the main path constants
  * -------------------------------------------------------------------
- *
+ */
 	// The name of THIS file
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
@@ -199,16 +191,16 @@ if (defined('ENVIRONMENT'))
 	
 		/* -- hook para  adicionar funcionalidade de Template engine (layout) */
 	// Path to the layout folder	
-//	define('LAYOUTPATH', './layouts/');
+	define('LAYOUTPATH', './layouts/');
 	
 	// Path to the javascript folder
-//	define('JSPATH', './js/');
+	define('JSPATH', './js/');
 	
 	// Path to the css folder
-//	define('CSSPATH', './css/');
+	define('CSSPATH', './css/');
 	
 	// Path to the images folder
-//	define('IMAGESPATH', './images/');
+/	define('IMAGESPATH', './images/');
 
 /**
  * --------------------------------------------------------------------
@@ -223,3 +215,4 @@ require_once BASEPATH.'core/CodeIgniter'.EXT;
 /*End of file index.php 
 Location: ./index.php*/
 
+?>
